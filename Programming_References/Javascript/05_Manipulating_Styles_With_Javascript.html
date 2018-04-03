@@ -23,6 +23,10 @@
 
     <button id = "create-paragraph">Create text</button>
 
+    <p id = "more-text">This is some text</p>
+
+    <button id ="b3"> Style text!</button>
+
 
     <script type = "text/javascript">
 
@@ -41,6 +45,11 @@
 
       document.getElementById('empty-paragraph').innerHTML = "Hello Galaxy!"
 
+    }
+
+    document.getElementById('b3').onclick = function(){
+
+      document.getElementById('more-text').style.display = "none";
     }
 
 
