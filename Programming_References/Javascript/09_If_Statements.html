@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+
+
+  </style>
+
+
+  </head>
+
+  <body>
+
+    <p>Please enter password below</p>
+
+    <input type = "text" id = "password"></input>
+
+    <button id = "b1">Login</button>
+
+
+
+
+
+    <script type = "text/javascript">
+
+    document.getElementById('b1').onclick = function(){
+
+    var pw = "";
+
+    pw = document.getElementById('password').value;
+
+
+
+    if (pw == "Hello World!"){
+
+      alert("Login successful");
+    }
+
+    else{
+
+      alert("Password is incorrect");
+    }
+
+  }
+
+
+    </script>
+
+
+  </body>
+
+
+  </html>

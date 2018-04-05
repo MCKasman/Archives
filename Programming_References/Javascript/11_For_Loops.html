@@ -1,0 +1,38 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+
+
+  </style>
+
+
+  </head>
+
+  <body>
+
+    <div id = "tweetDiv"></div>
+
+    <script type = "text/javascript">
+
+    var tweetString = "";
+
+    var tweets = ["Hello World!", "Goodbye World!", "Stop", "Lol okay."];
+
+    for (var i = 0; i < tweets.length; i ++){ // "++" means add one.
+
+      tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+    }
+
+    document.getElementById('tweetDiv').innerHTML = tweetString;
+
+
+    </script>
+
+
+  </body>
+
+
+  </html>
