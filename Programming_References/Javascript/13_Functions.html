@@ -30,7 +30,7 @@
 
     <script type = "text/javascript">
 
-    function doAGuess(correctAnswer){
+    function doAGuess(myNumber){
 
       var guess = Math.random();
 
@@ -38,7 +38,7 @@
 
       guess = Math.floor(guess); //This line makes the machine guess a whole number between 0 to 5.
 
-      if(guess == correctAnswer){ //Computer is correct
+      if(guess == myNumber){ //Computer is correct
 
         return(true);
 
