@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1529617070 source:c:\users\mckka\documents\archives\archives\programming_references\c++\c++ tutorial\src\noodles.cpp
+	"Noodles.h"
+	<iostream>
+
+1529616940 c:\users\mckka\documents\archives\archives\programming_references\c++\c++ tutorial\include\noodles.h
+	<iostream>
+
