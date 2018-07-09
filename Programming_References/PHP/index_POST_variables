@@ -1,0 +1,10 @@
+<?php
+  print_r($_POST);
+
+ ?>
+
+ <form method = "post">
+    <input name = "name" type = "text">
+
+    <input type = "submit" value = "Go!">
+</form>

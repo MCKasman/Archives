@@ -20,7 +20,7 @@ print_r($anotherArray);
 
 $thirdArray = array("Germany" => "German", "USA" =>"English");
 
-unset($thirdArray["USA"]); //unset to delete variables and items
+unset($thirdArray["USA"]); // use "unset" to delete variables and items
 
 print_r($thirdArray);
 
