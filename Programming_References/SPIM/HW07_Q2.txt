@@ -1,0 +1,37 @@
+	.text
+main:	la $t9,array
+	li $t0,0
+
+row:	beq $t0,20,done
+	li $t1,0
+	mul $t4,$t0,80
+	add $t9,$t9,$t4
+	div $t2,$t0,2
+	mfhi $t2
+	bnez $t2,orow
+
+erow:	li $t5,1
+eloop:	sw $t5,0($t9)
+	addi $t1,$t1,1
+	beq $t1,20,urow
+	addi $t9,$t9,4
+	addi $t5,$t5,1
+	j eloop
+
+urow:	addi $t0,$t0,1
+	la $t9,array
+	j row
+
+orow:	li $t5,20
+oloop:	sw $t5,0($t9)
+	addi $t1,$t1,1
+	beq $t1,20,urow
+	addi $t9,$t9,4
+	sub $t5,$t5,1
+	j oloop
+
+done:	li $v0,10
+	syscall
+
+	.data
+array:	.space 1600

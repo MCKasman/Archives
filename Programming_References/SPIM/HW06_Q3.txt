@@ -1,0 +1,29 @@
+      .data
+num1: .word 0x21
+num2: .word 0x44
+num3: .word 0x54
+num4: .word 0x55
+      .text
+
+main: la $t1,num1
+      li $t4,0
+
+onstk:lw $t0,0($t1)
+      sub $sp,$sp,4
+      sw $t0,0($sp)
+      addi $t4,$t4,1
+      beq $t4,4,letout
+      addi $t1,$t1,4
+      j onstk
+
+letout:li $v0,11
+
+loop: lw $a0,0($sp)
+      addi $sp,$sp,4
+      syscall
+      sub $t4,$t4,1
+      beqz $t4,done
+      j loop
+
+done: li $v0,10
+      syscall

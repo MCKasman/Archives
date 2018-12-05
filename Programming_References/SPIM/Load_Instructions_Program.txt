@@ -1,0 +1,10 @@
+	.text
+main:	lw $t0
+	
+
+
+
+
+	.data
+num1:	.word57
+ans:	.asciiz "The answer is"

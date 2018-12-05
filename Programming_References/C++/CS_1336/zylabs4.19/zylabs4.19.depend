@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1543197542 source:c:\users\mckka\documents\github\archives\archives\programming_references\c++\cs_1336\zylabs4.19\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<iomanip>
+

@@ -1,0 +1,20 @@
+      .text
+main: la $t2,w
+      li $t1,4
+      li $t0,0x73a8ef64
+
+loop: andi $t4,$t0,0xff
+      sw $t4,0($t2)
+      sub $t1,$t1,1
+      beqz $t1,done
+      ror $t0,$t0,8
+      addi $t2,$t2,4
+      j loop
+
+done: li $v0,10
+      syscall
+      .data
+w:    .word 0
+x:    .word 0
+y:    .word 0
+z:    .word 0

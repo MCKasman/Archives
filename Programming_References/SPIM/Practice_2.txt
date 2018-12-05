@@ -1,0 +1,12 @@
+		.text
+main:	li $t0,0x123
+		li $t1,0x12b7
+		li $t2,0x34af7
+		mul $t0,$t0,$t0
+		mul $t0,$t0,4
+		mul $t1,$t1,8
+		add $s0,$t1,$t0
+		add $s0,$s0,$t2
+	
+		li $v0,10
+		syscall

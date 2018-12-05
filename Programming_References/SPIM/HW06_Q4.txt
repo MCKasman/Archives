@@ -1,0 +1,30 @@
+      .text
+main: li $t4,4
+      la $t5,w
+      lw $t0,0($t5)
+
+go:   addi $t5,$t5,4
+      lw $t1,0($t5)
+      ble $t0,$t1,next
+      move $t0,$t1
+
+next: sub $t4,$t4,1
+      beqz $t1,print
+      j go
+
+print:la $a0,ldr
+      li $v0,4
+      syscall
+      li $v0,1
+      move $a0,$t0
+      syscall
+      li $v0,10
+      syscall
+
+      .data
+v: .word 0x6966abce
+w: .word 0x89c7d12e
+x: .word 0x7ff9348c
+y: .word 0x445e279a
+z: .word 0x123ac45d
+ldr: .asciiz "The smallest number = "
