@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1543356880 source:c:\users\mckka\documents\github\archives\archives\programming_references\c++\cs_1336\cs1336_hw09\main.cpp
-	<iostream>
-	<fstream>
-	<cstdlib>
-
