@@ -25,7 +25,7 @@ class Person:
     def getName(self):
         print("Your name is " + self.name)
     def getAge(self):
-        print("Your age is " +self.age)
+        print("Your age is " + self.age)
 
 p1 = Person("Bob", "22")    # if you do not pass variables for 'name' and 'age' then there will be an error
 print(p1.getName())
